@@ -15,11 +15,12 @@
 using namespace std;
 
 
-void search(int classNum, vector< vector<string> > fullClasses, int sectionNum, 
-                set<string, string> &currentClasses, int** bookedSlots, int totalClasses);
-void printSolution(map<int, int> &cal, int timeSlots);
-bool updateClass(string str, int** &bookedSlots, string type);
-void setBackSchedule(string str, int** &bookedSlots); 
+void search(int classNum, vector< vector<string> > fullClasses,
+                map<string, string> &currentClasses, vector< vector<int> > &bookedSlots, int totalClasses);
+void printSolution(map<string, string> &currentClasses);
+bool updateClass(string str, vector< vector<int> > &bookedSlots, string type);
+
+int scheduleCounter = 1;
 
 int main(int arc,char* argv[]){
     string file = argv[1];
@@ -40,10 +41,15 @@ int main(int arc,char* argv[]){
         vector<string> classes;
         classes.push_back(className);
         string result = "";
+        bool skip = true;
         for(long unsigned int i = 0; i <= classSchedule.length(); i++){
             if((classSchedule[i] == ',') || (i == classSchedule.length() && result != "")){
                 classes.push_back(result);
                 result = "";
+                skip = true;
+            }
+            else if(skip){
+                skip = false;
             }
             else{
                 result += classSchedule[i];
@@ -52,40 +58,43 @@ int main(int arc,char* argv[]){
         fullClasses.push_back(classes);
     }
 
-    set<string,string> currentClasses;
-    int* bookedSlots[5];
+    map<string, string> currentClasses;
+    vector< vector<int> > bookedSlots;
     for(int i = 0; i < 5; i++){
-        int temp[28];
+        vector<int> temp;
         for(int j = 0; j < 28; j++){
-            temp[j] = 0;
+            temp.push_back(0);
         }
-        bookedSlots[i] = temp;
+        bookedSlots.push_back(temp);
     }
 
-    search(0, fullClasses, 0, currentClasses, bookedSlots, totalClasses);
+    search(0, fullClasses, currentClasses, bookedSlots, totalClasses);
 
 }
 
 
-
-void search(int classNum, vector< vector<string> > fullClasses, int sectionNum, 
-                set<string,string> &currentClasses, int** &bookedSlots, int totalClasses){
+void search(int classNum, vector< vector<string> > fullClasses,
+                map<string,string> &currentClasses, vector< vector<int> > &bookedSlots, int totalClasses){
     
     if(classNum == totalClasses){
-        //DONE, PRINT SOLUTION
+        cout << "Schedule " << scheduleCounter << ":" << endl;
+        printSolution(currentClasses);
+        cout << endl;
+        scheduleCounter++;
     }
     else{   
         for(unsigned long int i = 1; i < fullClasses[classNum].size(); i++){
-            if(updateClass(fullClasses[classNum][sectionNum], bookedSlots, "add")){
-                currentClasses.insert(fullClasses[classNum][0], fullClasses[classNum][sectionNum]);
-                search(classNum+1, fullClasses, 1, currentClasses, bookedSlots, totalClasses);
-                updateClass(fullClasses[classNum][sectionNum], bookedSlots, "remove");
+            if(updateClass(fullClasses[classNum][i], bookedSlots, "add")){
+                currentClasses.insert(make_pair(fullClasses[classNum][0], fullClasses[classNum][i]));
+                search(classNum+1, fullClasses, currentClasses, bookedSlots, totalClasses);
+                updateClass(fullClasses[classNum][i], bookedSlots, "remove");
+                currentClasses.erase(fullClasses[classNum][0]);
             }
         }
     }
 }
 
-bool updateClass(string str, int** &bookedSlots, string type){
+bool updateClass(string str, vector< vector<int> > &bookedSlots, string type){
     map<char, int> dayConversion;
     dayConversion.insert(make_pair('M', 0));
     dayConversion.insert(make_pair('T', 1));
@@ -152,37 +161,9 @@ bool updateClass(string str, int** &bookedSlots, string type){
 //MWF 1230pm-330pm
 
 
-
-
-
-
-
-
-
-
-
-
-// void printSolution(map<int, int> &cal, int timeSlots){
-//     vector< vector<int> > classHolder;
-//     for(int i = 0; i < timeSlots; i++){
-//         vector<int> slot;
-//         slot.push_back(0);
-//         classHolder.push_back(slot);
-//     }
-
-//     map<int, int>::iterator it;
-//     for(it = cal.begin(); it != cal.end(); ++it){   
-//         classHolder[it -> second].push_back((int)it->first);
-//     }
-    
-//     for(int i = 0; i < timeSlots; i++){
-//         if(classHolder[i].size() >= 2){
-//             cout << "Section " << i+1 << ": ";
-//             for(int j = 1; j < classHolder[i].size()-1; j++){
-//                 cout << classHolder[i][j] << ", ";
-//             }
-//             cout << classHolder[i][classHolder[i].size()-1];
-//         }
-//         cout << endl;
-//     }
-// }
+void printSolution(map<string,string> &currentClasses){
+    map<string, string>::iterator it;
+    for(it = currentClasses.begin(); it != currentClasses.end(); ++it){   
+        cout << it -> first << ": " << it -> second << endl;
+    }
+}
