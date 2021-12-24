@@ -1,0 +1,1456 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Builder Helper</title>
+    <link rel = "stylesheet" href="styles.css" >
+</head>
+<header>
+<div class="header">
+    <h1>Course Builder</h1>
+    <h2>USC Course Building Tool: Takes the classes you want to take and outputs all possible combinations of schedules <h2>
+  </div>
+</header>
+<body>
+ <form>
+    <div id="form">
+    <p>
+        <input type = "radio" name="year" id="fresh" value = f>
+        <label for="fresh">Freshman</label>
+        <input type = "radio" name="year" id="soph" value ="s">
+        <label for="soph">Sophmore</label>
+        <input type = "radio" name="year" id="junior" value="j">
+        <label for="junior">Junior</label>
+        <input type = "radio" name="year" id="senior" value = "S">
+        <label for="senior">Senior</label>
+    </p>
+    <p>
+        <label for="contact">What is the best way to contact you</label>
+        <select name="contact" id ="contact">
+            <option value="phone">Phone Number</option>
+            <option value="email">Email</option>
+            <option value="Mail">Mail</option>
+    </p>     &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+    <br>
+    <p>
+        &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+        <label for ="name">Enter a username </label>
+        <input type="text" id="nameit" placeholder="First and Last name">
+    </p>
+    <p>
+        <label for ="cl">How many classes are you taking </label>
+        <input type="text" id="cl" placeholder="Enter number of classes ">
+    </p>
+    </div>
+        <h3 id="labelclass">    &nbsp;&nbsp; Please Enter the Class ID and all the possible time slots associated with the class <br> &nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp<input type="submit" id="submit" value="Create Schedules"> </h3>
+        <br>
+        <br>
+        <input type="text" id="firstclass"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select> 
+            <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select>
+         &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+        <input type="text" id="class"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select>
+        <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select>
+        &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+        <input type="text" id="class"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select>
+        <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select>
+        <br>
+        <input type="text" id="firstclass"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select> 
+            <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select>
+         &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+        <input type="text" id="class"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select>
+        <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select>
+        &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+        <input type="text" id="class"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select>
+        <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select><br>
+        <input type="text" id="firstclass"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select> 
+            <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select>
+         &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+        <input type="text" id="class"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select>
+        <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select>
+        &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+        <input type="text" id="class"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select>
+        <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select><br>
+        <input type="text" id="firstclass"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select> 
+            <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select>
+         &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+        <input type="text" id="class"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select>
+        <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select>
+        &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+        <input type="text" id="class"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select>
+        <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select><br>
+        <input type="text" id="firstclass"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select> 
+            <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select>
+         &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+        <input type="text" id="class"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select>
+        <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select>
+        &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+        <input type="text" id="class"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select>
+        <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select><br>
+        <input type="text" id="firstclass"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select> 
+            <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select>
+         &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+        <input type="text" id="class"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select>
+        <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select>
+        &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+        <input type="text" id="class"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select>
+        <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select><br>
+        <input type="text" id="firstclass"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select> 
+            <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select>
+         &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+        <input type="text" id="class"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select>
+        <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select>
+        &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+        <input type="text" id="class"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select>
+        <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select><br>
+        <input type="text" id="firstclass"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select> 
+            <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select>
+         &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+        <input type="text" id="class"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select>
+        <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select>
+        &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+        <input type="text" id="class"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select>
+        <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select><br>
+        <input type="text" id="firstclass"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select> 
+            <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select>
+         &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+        <input type="text" id="class"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select>
+        <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select>
+        &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+        <input type="text" id="class"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select>
+        <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select><br>
+        <input type="text" id="firstclass"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select> 
+            <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select>
+         &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+        <input type="text" id="class"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select>
+        <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select>
+        &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+        <input type="text" id="class"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select>
+        <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select><br>
+        <input type="text" id="firstclass"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select> 
+            <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select>
+         &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+        <input type="text" id="class"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select>
+        <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select>
+        &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+        <input type="text" id="class"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select>
+        <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select><br>
+        <input type="text" id="firstclass"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select> 
+            <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select>
+         &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+        <input type="text" id="class"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select>
+        <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select>
+        &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+        <input type="text" id="class"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select>
+        <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select><br>
+        <input type="text" id="firstclass"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select> 
+            <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select>
+         &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+        <input type="text" id="class"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select>
+        <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select>
+        &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+        <input type="text" id="class"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select>
+        <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select><br>
+        <input type="text" id="firstclass"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select> 
+            <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select>
+         &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+        <input type="text" id="class"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select>
+        <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select>
+        &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+        <input type="text" id="class"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select>
+        <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select><br>
+        <input type="text" id="firstclass"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select> 
+            <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select>
+         &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+        <input type="text" id="class"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select>
+        <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select>
+        &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+        <input type="text" id="class"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select>
+        <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select><br>
+        <input type="text" id="firstclass"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select> 
+            <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select>
+         &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+        <input type="text" id="class"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select>
+        <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select>
+        &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+        <input type="text" id="class"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select>
+        <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select><br>
+        <input type="text" id="firstclass"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select> 
+            <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select>
+         &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+        <input type="text" id="class"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select>
+        <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select>
+        &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+        <input type="text" id="class"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select>
+        <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select><br>
+        <input type="text" id="firstclass"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select> 
+            <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select>
+         &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+        <input type="text" id="class"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select>
+        <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select>
+        &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+        <input type="text" id="class"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select>
+        <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select><br>
+        <input type="text" id="firstclass"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select> 
+            <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select>
+         &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+        <input type="text" id="class"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select>
+        <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select>
+        &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+        <input type="text" id="class"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select>
+        <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select><br>
+        <input type="text" id="firstclass"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select> 
+            <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select>
+         &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+        <input type="text" id="class"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select>
+        <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select>
+        &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+        <input type="text" id="class"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select>
+        <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select><br>
+        <input type="text" id="firstclass"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select> 
+            <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select>
+         &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+        <input type="text" id="class"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select>
+        <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select>
+        &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+        <input type="text" id="class"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select>
+        <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select><br>
+        <input type="text" id="firstclass"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select> 
+            <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select>
+         &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+        <input type="text" id="class"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select>
+        <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select>
+        &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+        <input type="text" id="class"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select>
+        <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select><br>
+        <input type="text" id="firstclass"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select> 
+            <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select>
+         &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+        <input type="text" id="class"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select>
+        <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select>
+        &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+        <input type="text" id="class"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select>
+        <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select><br>
+        <input type="text" id="firstclass"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select> 
+            <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select>
+         &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+        <input type="text" id="class"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select>
+        <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select>
+        &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+        <input type="text" id="class"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select>
+        <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select><br>
+        <input type="text" id="firstclass"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select> 
+            <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select>
+         &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+        <input type="text" id="class"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select>
+        <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select>
+        &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+        <input type="text" id="class"  placeholder="Class ID ">
+        <input type="text" id="name"  placeholder="Time slot ">
+        <select name="Type" id="type">
+            <option value="lab"> Lab </option>
+            <option value="lec"> Lecture </option>
+            <option value="discussion"> Discussion </option>
+            <option value="quiz"> Quiz </option>
+        </select>
+        <select name="day" id="day">
+            <option value="M"> Monday </option>
+            <option value="MW"> Monday/Wednesday </option>
+            <option value="MWF"> Monday/Wedensday/Friday </option>
+            <option value="t"> Tuesday </option>
+            <option value="tT"> Tuesday-Thursday </option>
+            <option value="W"> Wedensday </option>
+            <option value="T"> Thursday </option>
+            <option value="F"> Friday </option>
+        </select>
+        
+</form>
+</div>
+</body>
+</html>
