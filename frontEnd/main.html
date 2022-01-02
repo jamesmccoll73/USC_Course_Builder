@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Course Builder Helper</title>
     <link rel = "stylesheet" href="styles.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
 <header>
 <div class="header">
@@ -38,12 +40,22 @@
     <p>
         &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
         <label for ="name">Enter a username </label>
-        <input type="text" id="nameit" placeholder="First and Last name">
+        <input type="text" id="nameit" placeholder="First and Last name" required>
     </p>
-    <p>
+<span>
         <label for ="cl">How many classes are you taking </label>
-        <input type="text" id="cl" placeholder="Enter number of classes ">
-    </p>
+        <input type="text" id="cl" required>
+    </span>
+    <hr>
+    <div id="info">
+        <h4> About </h4>
+        <p id="infop"> This website is a course builder tool which helps by generating all possible schedules given the class input, from there choose the most ideal schedule for the semester!</p>
+    </div>
+    <hr>
+    <div id=authors> 
+        <h4> Developers </h4>
+        <p id="infop"> Developed by Toan Huynh @toanh@usc.edu and James Mccoll @jmcoll@usc.edu, email us for any bugs/fixes! </p>
+    </div>
     </div>
         <h3 id="labelclass">    &nbsp;&nbsp; Please Enter the Class ID and all the possible time slots associated with the class <br> &nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp<input type="submit" id="submit" value="Create Schedules"> </h3>
         <br>
@@ -1451,6 +1463,5 @@
         </select>
         
 </form>
-</div>
 </body>
 </html>

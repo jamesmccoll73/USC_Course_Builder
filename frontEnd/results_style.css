@@ -1,16 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Parisienne|Quicksand&display=swap') no-repeat;
+@import url('https://fonts.googleapis.com/css?family=Parisienne|Quicksand&display=swap');
 html, body {
 	height: 100%;
 	margin: 0;
-	padding: 0px;
-	background-image: linear-gradient(to right, rgba(255, 0, 0, 0.575), rgb(218, 216, 78),rgba(255, 0, 0, 0.575), rgb(218, 216, 78),rgba(255, 0, 0, 0.575), rgb(218, 216, 78)) ;
-	background-color: rgb(221, 6, 6);
-	background-size: cover;
-    font-family: 'Montserrat', sans-serif;
+	background-image: linear-gradient(to right, rgba(255, 0, 0, 0.575), rgb(218, 216, 78),rgba(255, 0, 0, 0.575), rgb(218, 216, 78),rgba(255, 0, 0, 0.575), rgb(218, 216, 78));
+	background-color: rgb(221, 6, 6);	font-family: 'Montserrat', sans-serif;
 	font-size: 13px;
 }
 *{
-    zoom: 95%;
+    zoom: 85%;
+}
+
+.row{
+    font-weight: bold;
 }
 .container {
 	height: 100%;
@@ -60,7 +61,7 @@ html, body {
     border:0;
     height: 7px;
     box-shadow:0 0 15px 4px rgba(48, 48, 43, 0.973);
-    margin-left: 25%;
+    margin-left: 30%;
  }
 
 
@@ -94,9 +95,9 @@ select{
     width: 667px;
     height: 53px;
     margin-left: 560px;
-    border: 10px solid gold;
+    border: 10px solid tan;
     border-radius: 20%;
-    margin-top: -400px;
+    margin-top: -180px;
 }
 .header-bar::after {
 	content: '';
@@ -177,13 +178,6 @@ h2{
     text-decoration: underline;
 }
 
-#border{
-	width: 300px;
-	border: 3px solid black;
-	background-color: white;
-	position:fixed;
-}
-
 #divider{
 	height: 30px;
 }
@@ -192,9 +186,10 @@ table{
 	margin-bottom: 45px;
 	border-spacing: 0;
 	width: 300px;
+    font-size: 25px;
 	float: center;
 	background-color: white;
-	display: inline block;
+	display: inline;
 }
 
 tbody{
@@ -204,8 +199,21 @@ tbody{
 td{
 	width:20px;
 	padding: 10px;
+    border: black;
 	border: 2px solid black;
 	background-color: white;
+}
+#eam{
+    background: green
+}
+#nam{
+    background: linear-gradient(0.50turn , green 50%, white 50%);
+}
+
+
+
+#spf{
+    background-color: blue;
 }
 
 
@@ -225,14 +233,8 @@ tr{
 	display: inline;
 }
 
-#info{
-	height: 120px;
-    background-color: white;
-	margin-bottom: 0px;
-}
-#author{
-	margin-bottom: -100px;
-}
-#infop{
-	font-size: 16px;
+#heading{
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: rgb(185, 185, 245);
 }
