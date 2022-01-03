@@ -1,6 +1,6 @@
 ## USC_Course_Builder
 
-### **Website reconstruction in progress**
+### ** Website reconstruction in progress **
 
 **Demo:** file:///Users/jamesmccoll/Desktop/csci104/USC_Course_Builder/frontEnd/main.html
 
